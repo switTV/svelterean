@@ -61,6 +61,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin-top: 20px;
         }
 
         .SobreMi .SobreMi_text {
