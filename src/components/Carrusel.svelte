@@ -18,10 +18,14 @@
 
     .Carrusel .Carrusel_container {
         width: 70vw;
-
         display: flex;
+    }
 
-
+    @media screen and (max-width: 320px) {
+        .Carrusel .Carrusel_container {
+            width: 90vw;
+            display: flex;
+        }
     }
 </style>
 
@@ -32,6 +36,11 @@
             "arrows": false,
             "gap": "10px",
             "autoplay": true,
+            breakpoints: {
+		        320: {
+		        	perPage: 1,
+		        },
+            }
         }}>
             {#each data.props.data2.items as splide}
                 <CarruselCard {splide}></CarruselCard>

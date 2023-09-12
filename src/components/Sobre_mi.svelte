@@ -35,6 +35,39 @@
     .SobreMi_container .SobreMi_text {
         width: 400px;
     }
+
+    @media screen and (max-width: 320px) {
+        .SobreMi_container {
+            width: 90vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .SobreMi_img {
+            width: 90vw;
+            height: 300px;
+            background-image: url("../assets/imagen_sobre_mi.jpg");
+            background-size: cover;
+            border-radius: 5px;
+            background-position-y: 20%;
+        }
+
+        .SobreMi {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .SobreMi .SobreMi_text {
+            width: 90vw;
+            margin-top: 20px;
+        }
+    }
 </style>
 
 <!-- markup (zero or more items) goes here -->

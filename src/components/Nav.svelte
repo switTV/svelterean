@@ -25,6 +25,15 @@
         color: #000;
         text-decoration: none;
     }
+
+    @media screen and (max-width: 320px) {
+        .Nav .Nav_container {
+            width: 90vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 </style>
 
 <!-- markup (zero or more items) goes here -->

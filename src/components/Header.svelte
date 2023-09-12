@@ -48,6 +48,35 @@
     .Header .Header_container .Header_container_video iframe {
         border-radius: 5px;
     }
+
+    @media screen and (max-width: 320px) {
+        .Header {
+            width: 100%;
+            height: 50vh;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .Header_container {
+            width: 90vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .Header .Header_container .Header_container_video .Header_container_video_shadow {
+            display: none;
+        }
+
+        .Header .Header_container .Header_container_video iframe {
+            width: 250px;
+            height: 150px;
+            margin-top: 20px;
+        }
+    }
 </style>
 
 <!-- markup (zero or more items) goes here -->

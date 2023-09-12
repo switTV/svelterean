@@ -27,6 +27,16 @@
     .Footer_container .Footer_text p{
         color: #FFF;
     }
+
+    @media screen and (max-width: 320px) {
+        .Footer_container {
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 </style>
 
 <!-- markup (zero or more items) goes here -->
