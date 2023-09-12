@@ -49,7 +49,7 @@
         border-radius: 5px;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 400px) {
         .Header {
             width: 100%;
             height: 50vh;

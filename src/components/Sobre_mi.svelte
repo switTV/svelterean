@@ -36,7 +36,7 @@
         width: 400px;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 400px) {
         .SobreMi_container {
             width: 90vw;
 

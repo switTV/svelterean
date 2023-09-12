@@ -21,7 +21,7 @@
         display: flex;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 400px) {
         .Carrusel .Carrusel_container {
             width: 90vw;
             display: flex;
