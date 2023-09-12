@@ -37,7 +37,7 @@
             "gap": "10px",
             "autoplay": true,
             breakpoints: {
-		        320: {
+		        400: {
 		        	perPage: 1,
 		        },
             }

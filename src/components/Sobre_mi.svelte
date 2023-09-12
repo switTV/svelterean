@@ -60,7 +60,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 90vh;
+            height: 100vh;
         }
 
         .SobreMi .SobreMi_text {
