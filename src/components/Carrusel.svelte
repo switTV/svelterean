@@ -5,6 +5,8 @@
 
     export let data
     console.log(data)
+
+    console.log(data.props.data2.items)
 </script>
 
 <style>
@@ -36,6 +38,7 @@
             "arrows": false,
             "gap": "10px",
             "autoplay": true,
+            "rewind": true,
             breakpoints: {
 		        400: {
 		        	perPage: 1,
