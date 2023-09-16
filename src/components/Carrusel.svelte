@@ -43,6 +43,9 @@
 		        400: {
 		        	perPage: 1,
 		        },
+                768: {
+                    perPage: 1,
+                }
             }
         }}>
             {#each data.props.data2.items as splide}

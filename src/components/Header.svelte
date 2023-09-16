@@ -48,6 +48,26 @@
     .Header .Header_container .Header_container_video iframe {
         border-radius: 5px;
     }
+    
+    @media screen and (max-width: 768px) {
+        .Header_container {
+            width: 70vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .Header_container .Header_container_video iframe {
+            width: 350px;
+            height: 200px;
+        }
+
+        .Header .Header_container .Header_container_video .Header_container_video_shadow {
+            display: none;
+        }
+    }
 
     @media screen and (max-width: 400px) {
         .Header {
@@ -72,11 +92,12 @@
         }
 
         .Header .Header_container .Header_container_video iframe {
-            width: 250px;
+            width: 90vw;
             height: 150px;
             margin-top: 20px;
         }
     }
+
 </style>
 
 <!-- markup (zero or more items) goes here -->

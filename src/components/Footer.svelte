@@ -28,7 +28,7 @@
         color: #FFF;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 768px) {
         .Footer_container {
             width: 90vw;
             display: flex;
