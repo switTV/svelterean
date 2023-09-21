@@ -10,6 +10,10 @@
     import Footer from "../components/Footer.svelte";
 </script>
 
+<svelte:head>
+    <title>Svelterean || enamorado de svelte</title>
+</svelte:head>
+
 <style>
     :global(*) {
         margin: 0;
