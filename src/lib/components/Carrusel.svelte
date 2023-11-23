@@ -4,7 +4,6 @@
     import '@splidejs/splide/css';
 
     export let data
-    console.log(data)
 
     console.log(data.props.data2.items)
 </script>

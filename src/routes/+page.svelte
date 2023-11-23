@@ -3,11 +3,11 @@
 
     export let data:PageData
 
-    import Nav from "../components/Nav.svelte";
-    import Header from "../components/Header.svelte";
-    import Carrusel from "../components/Carrusel.svelte";
-    import SobreMi from "../components/Sobre_mi.svelte"
-    import Footer from "../components/Footer.svelte";
+    import Nav from "../lib/components/Nav.svelte";
+    import Header from "../lib/components/Header.svelte";
+    import Carrusel from "../lib/components/Carrusel.svelte";
+    import SobreMi from "../lib/components/Sobre_mi.svelte"
+    import Footer from "../lib/components/Footer.svelte";
 </script>
 
 <svelte:head>

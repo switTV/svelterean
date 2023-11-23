@@ -5,7 +5,7 @@
     .SobreMi_img {
         width: 700px;
         height: 300px;
-        background-image: url("../assets/imagen_sobre_mi.jpg");
+        background-image: url("../../assets/imagen_sobre_mi.jpg");
         background-size: cover;
         border-radius: 5px;
         background-position-y: 20%;
@@ -57,7 +57,7 @@
         .SobreMi_img {
             width: 90vw;
             height: 300px;
-            background-image: url("../assets/imagen_sobre_mi.jpg");
+            background-image: url("../../assets/imagen_sobre_mi.jpg");
             background-size: cover;
             border-radius: 5px;
             background-position-y: 20%;
@@ -82,7 +82,7 @@
         .SobreMi_img {
             width: 40vw;
             height: 400px;
-            background-image: url("../assets/imagen_sobre_mi.jpg");
+            background-image: url("../../assets/imagen_sobre_mi.jpg");
             background-size: cover;
             border-radius: 5px;
             background-position-y: 20%;
@@ -110,7 +110,7 @@
         .SobreMi_img {
             width: 70vw;
             height: 300px;
-            background-image: url("../assets/imagen_sobre_mi.jpg");
+            background-image: url("../../assets/imagen_sobre_mi.jpg");
             background-size: cover;
             border-radius: 5px;
             background-position-y: 20%;
@@ -148,7 +148,7 @@
         .SobreMi_img {
             width: 90vw;
             height: 300px;
-            background-image: url("../assets/imagen_sobre_mi.jpg");
+            background-image: url("../../assets/imagen_sobre_mi.jpg");
             background-size: cover;
             border-radius: 5px;
             background-position-y: 20%;
