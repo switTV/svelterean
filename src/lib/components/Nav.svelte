@@ -11,7 +11,7 @@
             backgroundColor = "#28965A"
         }
         else {
-            backgroundColor = "#175031b2"
+            backgroundColor = "#17502ab2"
         }
     }
 
