@@ -100,9 +100,24 @@
         grid-area: slider_comments;
         background-color: #131B23;
         border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #FBFEF9;
+    }
+
+    .hora_bsas {
+        margin-top: 20px;
     }
 
     @media screen and (max-width: 768px) {
+
+        .main_container {
+            width: 70%;
+        }
+
         .Sobre_maximo {
             background-size: cover;
         }
@@ -110,6 +125,12 @@
 
         .YT {
             background-size: cover;
+        }
+    }
+    
+    @media screen and (min-width: 1875px) {
+        .main_container {
+            width: 40%;
         }
     }
 </style>
@@ -125,8 +146,8 @@
             <h2>YT</h2>
         </div>
         <div class="clima">
-            <h2>hora BS.AS</h2>
-            <h2 class="">{hora_bsas}</h2>
+            <h2>hora <br> BS.AS</h2>
+            <h2 class="hora_bsas">{hora_bsas}</h2>
         </div>
         <div class="video">
             <iframe style="border-radius: 10px;" width={iframe_width}% height={iframe_height}% src="https://www.youtube.com/embed/Sn4JvJoht-o?si=ysU24qxg6n6vLjER" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
