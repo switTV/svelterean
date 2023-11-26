@@ -115,7 +115,7 @@
     @media screen and (max-width: 768px) {
 
         .main_container {
-            width: 70%;
+            width: 85%;
         }
 
         .Sobre_maximo {
