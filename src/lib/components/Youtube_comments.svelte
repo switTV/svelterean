@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let data
 
     let youtube_comment = data.props.data_comentarios.items[0].snippet.topLevelComment.snippet.textOriginal
@@ -8,7 +8,7 @@
     let text_second_part = ""
     let comment_state = false
 
-    function make_youtube_comment_shorter(num_letters) {
+    function make_youtube_comment_shorter(num_letters:number) {
         if (youtube_comment.length >= num_letters) {
             text_first_part = youtube_comment.slice(0, num_letters) + "..."
             text_second_part = youtube_comment.slice(num_letters)

@@ -39,6 +39,8 @@
 
         position: fixed;
         z-index: 999;
+    
+        view-transition-name: header;
     }
 
     .Nav h1 {

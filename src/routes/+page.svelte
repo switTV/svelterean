@@ -3,7 +3,6 @@
 
     export let data:PageData
 
-    import Nav from "../lib/components/Nav.svelte";
     import Main from "$lib/components/main.svelte";
     import Footer from "../lib/components/Footer.svelte";
 </script>
@@ -17,7 +16,6 @@
 </style>
 
 <body>
-    <Nav></Nav>
     <Main {data}></Main>
     <Footer></Footer>
 </body>

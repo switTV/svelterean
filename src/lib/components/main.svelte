@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
     import { isQuotesActive } from "$lib/stores/quotesStore";
     import { Splide, SplideSlide } from '@splidejs/svelte-splide';
     import '@splidejs/svelte-splide/css/sea-green';
     import Youtube_comments from "./Youtube_comments.svelte"
+    import { goto } from "$app/navigation";
     export let data
 
     let iframe_width = 100
@@ -15,6 +16,14 @@
     });
 
     let current_video_id = data.props.data.items[0].id.videoId
+
+    function redirect_to(direction:string) {
+        try {
+            goto(`${direction}`)
+        } catch (error) {
+            console.error(error)
+        }
+    }
 
 
     
@@ -36,7 +45,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: center;
-        gap: 10px 10px;
+        gap: 15px 15px;
         height: 110vh;
         width: 90%;
         grid-template-areas:
@@ -94,6 +103,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        text-align: center;
         color: #FBFEF9;
     }
     .video {
@@ -131,6 +141,7 @@
 
         .main_container {
             width: 85%;
+            gap: 10px 10px;
         }
 
         .Sobre_maximo {
@@ -154,10 +165,10 @@
 
 <div class="main">
     <div class="main_container">
-        <div class="Sobre_maximo img-card">
+        <div class="Sobre_maximo img-card" on:click={() => {redirect_to("/maximo")}}>
             <h2>Sobre Máximo</h2>
         </div>
-        <div class="YT img-card">
+        <div class="YT img-card" on:click={() => {redirect_to("/maximo")}}>
             <h2>YT</h2>
         </div>
         <div class="clima">

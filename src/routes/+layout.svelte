@@ -1,5 +1,8 @@
 <script lang="ts">
     import type { LayoutData } from './$types';
+    import Nav from '$lib/components/Nav.svelte';
+    import ViewTransition from "../lib/components/Navigation.svelte"
+
     
     export let data: LayoutData;
 </script>
@@ -32,5 +35,7 @@
 </style>
 
 <div class="scene">
+    <ViewTransition/>
+    <Nav></Nav>
     <slot></slot>
 </div>
