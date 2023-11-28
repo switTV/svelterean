@@ -1,5 +1,9 @@
 <script>
     import { isQuotesActive } from "$lib/stores/quotesStore";
+    import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+    import '@splidejs/svelte-splide/css/sea-green';
+    import Youtube_comments from "./Youtube_comments.svelte"
+    export let data
 
     let iframe_width = 100
     let iframe_height = 100
@@ -9,6 +13,11 @@
         hour: "numeric",
         minute: "numeric"
     });
+
+    let current_video_id = data.props.data.items[0].id.videoId
+
+
+    
 
 </script>
 
@@ -112,6 +121,12 @@
         margin-top: 20px;
     }
 
+    .arrow {
+        width: 50px;
+        height: 50px;
+        background-color: #FBFEF9;
+    }
+
     @media screen and (max-width: 768px) {
 
         .main_container {
@@ -150,11 +165,15 @@
             <h2 class="hora_bsas">{hora_bsas}</h2>
         </div>
         <div class="video">
-            <iframe style="border-radius: 10px;" width={iframe_width}% height={iframe_height}% src="https://www.youtube.com/embed/Sn4JvJoht-o?si=ysU24qxg6n6vLjER" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe style="border-radius: 10px;" width={iframe_width}% height={iframe_height}% src="https://www.youtube.com/embed/{current_video_id}?rel=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;" allowfullscreen></iframe>
         </div>
         <div class="slider_comments">
             {#if $isQuotesActive == true}
-                <h2>comments here</h2>
+            <Splide aria-label="My Favorite Images">
+                <SplideSlide>
+                    <Youtube_comments {data}/>
+                </SplideSlide>
+            </Splide>
             {:else}
                 <h2>Se me acabaron las quotes de youtube</h2>
             {/if}

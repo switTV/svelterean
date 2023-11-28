@@ -18,6 +18,6 @@
 
 <body>
     <Nav></Nav>
-    <Main></Main>
+    <Main {data}></Main>
     <Footer></Footer>
 </body>

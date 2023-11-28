@@ -25,6 +25,10 @@
         font-size: 15px;
         color: #000;
     }
+
+    .scene {
+        overflow-x: hidden;
+    }
 </style>
 
 <div class="scene">
