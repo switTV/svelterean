@@ -9,7 +9,7 @@
 
         display: flex;
         justify-content: center;
-        background-color: #136F63;
+        background-color: #28965A;
     }
 
     .Footer_container {

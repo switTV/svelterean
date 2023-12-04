@@ -168,7 +168,7 @@
         <div class="Sobre_maximo img-card" on:click={() => {redirect_to("/maximo")}}>
             <h2>Sobre Máximo</h2>
         </div>
-        <div class="YT img-card" on:click={() => {redirect_to("/maximo")}}>
+        <div class="YT img-card" on:click={() => {redirect_to("/svelterean")}}>
             <h2>YT</h2>
         </div>
         <div class="clima">
