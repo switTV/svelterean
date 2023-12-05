@@ -53,6 +53,12 @@
         color: #28965A;
     }
 
+    @media screen and (max-width: 900px) {
+        .sobre_mi_container {
+            width: 80%;
+        }
+    }
+
 </style>
 
 <!-- markup (zero or more items) goes here -->

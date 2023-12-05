@@ -80,7 +80,29 @@
         color: #28965A;
     }
 
+
+    @media screen and (max-width: 600px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            grid-template-areas:
+                "img_svelterean img_svelterean"
+                "text_svelterean text_svelterean"
+                "vistas_svelterean subs_svelterean"
+                "videos_svelterean videos_svelterean";
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .container {
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            grid-template-areas:
+                "img_svelterean text_svelterean text_svelterean"
+                "vistas_svelterean subs_svelterean videos_svelterean";
+        }
+    }
+
 </style>
+
 <div class="main">
     <div class="container">
       <div class="text_svelterean">
