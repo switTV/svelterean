@@ -3,7 +3,7 @@
     import { Splide, SplideSlide } from '@splidejs/svelte-splide';
     import '@splidejs/svelte-splide/css/sea-green';
     import Youtube_comments from "./Youtube_comments.svelte"
-    import { goto } from "$app/navigation";
+    import { redirect_to } from "$lib/stores/functions";
     export let data
 
     let iframe_width = 100
@@ -16,18 +16,6 @@
     });
 
     let current_video_id = data.props.data.items[0].id.videoId
-
-    function redirect_to(direction:string) {
-        try {
-            goto(`${direction}`)
-        } catch (error) {
-            console.error(error)
-        }
-    }
-
-
-    
-
 </script>
 
 <style>

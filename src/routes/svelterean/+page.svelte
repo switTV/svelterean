@@ -2,6 +2,8 @@
     import type { PageData } from './$types';
     
     export let data: PageData;
+
+    console.log(data)
 </script>
 
 <style>
@@ -85,10 +87,13 @@
         .container {
             grid-template-columns: repeat(2, 1fr); /* Dos columnas */
             grid-template-areas:
-                "img_svelterean img_svelterean"
                 "text_svelterean text_svelterean"
                 "vistas_svelterean subs_svelterean"
                 "videos_svelterean videos_svelterean";
+            width: 90%;
+        }
+        .img_svelterean {
+            display: none;
         }
     }
 

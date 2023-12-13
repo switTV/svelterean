@@ -31,6 +31,7 @@
 
     .scene {
         overflow-x: hidden;
+        background-color: #FBFEF9
     }
 </style>
 
