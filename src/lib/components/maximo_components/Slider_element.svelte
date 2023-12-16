@@ -12,7 +12,7 @@
 
     .splide_item {
         background-color: #131b23;
-        min-height: 250px;
+        height: 250px;
         color: #fbfef9;
         padding: 10px;
         border-radius: 10px;
@@ -22,9 +22,6 @@
         align-items: center;
     }
 
-    .splide_item_background {
-        grid-area: splide_item_background;
-    }
     .splide_item_text {
         grid-area: splide_item_text;
 
@@ -38,11 +35,6 @@
     }
     .splide_item_text_header h2 {
         margin-right: 10px;
-    }
-
-    .activated {
-        opacity: 1;
-        display: block;
     }
 
     .splide_item p {

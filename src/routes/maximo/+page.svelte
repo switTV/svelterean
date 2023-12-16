@@ -92,11 +92,12 @@
 
     .sobre_mi {
         width: 100vw;
-        margin-top: 90px;
+        height: 100vh;
 
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
     }
 
     .sobre_mi_container {
@@ -105,6 +106,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+
     }
 
     .sobre_maximo {
@@ -139,7 +141,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+
     .sobre_maximo_text h1 {
         color: #fff;
         font-size: 32px;
@@ -157,7 +159,28 @@
 
     @media screen and (max-width: 900px) {
         .sobre_mi_container {
-            width: 80%;
+            width: 90%;
+        }
+    }
+    
+    @media screen and (max-width: 1540px) {
+        .sobre_maximo_img {
+            display: none;
+        }
+        .sobre_maximo {
+            height: 450px;
+            background: #131b23;
+            /* background: linear-gradient(90deg, rgba(19,27,35,1) 23%, rgba(47,62,78,1) 100%); */
+            margin-bottom: 15px;
+            border-radius: 10px;
+
+            display: grid; 
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "Sobre_maximo_text";
         }
     }
 </style>

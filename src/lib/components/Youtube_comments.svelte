@@ -10,7 +10,7 @@
 
     function make_youtube_comment_shorter(num_letters:number) {
         if (youtube_comment.length >= num_letters) {
-            text_first_part = youtube_comment.slice(0, num_letters) + "..."
+            text_first_part = youtube_comment.slice(0, num_letters)
             text_second_part = youtube_comment.slice(num_letters)
 
             youtube_comment = text_first_part
@@ -57,6 +57,14 @@
         height: 45px;
         border-radius: 50%;
     }
+
+    .long:after {
+        content: "";
+    }
+    p:after {
+        content: "...";
+    }
+    
 </style>
 
 <!-- markup (zero or more items) goes here -->
@@ -66,6 +74,6 @@
         
     </div>
     <div class="text_container">
-        <p on:click={make_youtube_comment_longer}>{youtube_comment}</p>
+        <p class:long={comment_state == true} on:click={make_youtube_comment_longer}>{youtube_comment}</p>
     </div>
 </div>

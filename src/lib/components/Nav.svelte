@@ -50,6 +50,7 @@
         font-size: 36px;
         font-family: "Montserrat", sans-serif;
         color: #FBFEF9;
+        cursor: pointer;
     }
     
     .Nav .Nav_container {
